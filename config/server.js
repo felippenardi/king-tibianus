@@ -14,11 +14,12 @@
 
 module.exports = {
   drawRoutes: function(app) {
-    app.get('/books', function (req, res) {
+    app.get('/quests', function (req, res) {
       res.json([
-        {title: 'Great Expectations', author: 'Dickens'},
-        {title: 'Foundation Series', author: 'Asimov'},
-        {title: 'Treasure Island', author: 'Stephenson'}
+        {description: 'TibiaWiki is giving away The Epic Wisdom',
+          link: 'http://tibiawiki.com.br', banner: 'tw.png'},
+        {description: 'PortalTibia is giving away an Epaminondas Doll',
+          link: 'http://portaltibia.com.br', banner: 'pt.png'},
       ]);
     });
   }

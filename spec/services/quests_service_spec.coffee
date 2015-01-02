@@ -15,4 +15,4 @@ describe "service: Quests", ->
     @QuestsService.index().then (response) ->
       quests = response
     @$httpBackend.flush()
-    expect(quests.data).toEqual(jasmine.any(Array))
+    expect(quests).toEqual(jasmine.any(Array))
